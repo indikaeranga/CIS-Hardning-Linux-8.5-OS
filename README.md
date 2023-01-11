@@ -5,3 +5,5 @@ This will ensure the security of servers with CIS standards / benchmarks. This s
 
 There have 6 parts of the script. We can run all (./<scriptname> all) parts as once. please replace script name. Otherwise we can run specific section.  
 (./<scriptname> part1)
+  
+You can edit messages as you wish. I recommend to apply with TEST servers first and proceed to PROD. 
