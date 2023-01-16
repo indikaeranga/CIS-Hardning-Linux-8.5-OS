@@ -315,7 +315,7 @@ chown root:root /etc/cron.allow
 echo "Configuring PAM..."
 cp /etc/login.defs $AUDITDIR/login_defs_$TIME.bak
 sed -i 's/PASS_MAX_DAYS   99999/PASS_MAX_DAYS   90/g' /etc/login.defs
-#chage -M 90 saji
+chage -M 90 indika
 
 echo "Configuring Systems accounts..."
 for user in `awk -F: '($3 < 1000) {print $1 }' /etc/passwd` ; do
